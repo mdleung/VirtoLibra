@@ -1,6 +1,9 @@
 import React from "react";
 import Header from "./Components/Header";
-import {FirebaseProvider} from "./context";
+import BookList from "./Components/bookList/BookList";
+
+import useApplicationData from "./hooks/useApplicationData";
+import { FirebaseProvider } from "./context";
 import FirebaseExample from "./Components/FirebaseExample";
 
 function App() {
@@ -9,6 +12,7 @@ function App() {
       <div className="App">
         <Header />
         <FirebaseExample />
+        <BookList />
       </div>
     </FirebaseProvider>
   );
